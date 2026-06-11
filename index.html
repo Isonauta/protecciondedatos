@@ -87,6 +87,7 @@
       rgba(255,255,255,0.015) 40px,
       rgba(255,255,255,0.015) 80px
     );
+    pointer-events: none;
   }
   .hero-eyebrow {
     display: inline-block;
@@ -135,9 +136,9 @@
     padding: 0.75rem 1.25rem;
     text-align: center;
   }
-  .date-chip .day { font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 700; line-height: 1; color: var(--gold); }
-  .date-chip .month { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.6); }
-  .date-chip .time { font-size: 0.8rem; color: rgba(255,255,255,0.8); margin-top: 0.2rem; }
+  .date-chip .day { font-family: 'Fraunces', serif; font-size: 2.8rem; font-weight: 700; line-height: 1; color: var(--gold); }
+  .date-chip .month { font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.75); }
+  .date-chip .time { font-size: 0.88rem; color: rgba(255,255,255,0.9); margin-top: 0.3rem; font-weight:500; }
 
   .hero-btn {
     display: inline-block;
@@ -279,8 +280,8 @@
     flex-shrink: 0;
   }
   .modulo-info { flex: 1; }
-  .modulo-info .sesion { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.7; }
-  .modulo-info h3 { font-size: 0.95rem; font-weight: 700; color: var(--white); margin: 0.1rem 0 0.15rem; }
+  .modulo-info .sesion { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #fff; opacity: 0.9; }
+  .modulo-info h3 { font-size: 1.15rem; font-weight: 700; color: var(--white); margin: 0.2rem 0 0.2rem; }
   .modulo-info .pregunta { font-size: 0.82rem; font-style: italic; opacity: 0.8; color: var(--white); }
   .modulo-arrow { color: var(--white); font-size: 1rem; transition: transform 0.2s; }
   .modulo.open .modulo-arrow { transform: rotate(180deg); }
@@ -483,7 +484,7 @@
   @media (max-width: 640px) {
     .hero { padding: 3.5rem 1.25rem 3rem; }
     .hero-dates { gap: 0.5rem; }
-    .date-chip .day { font-size: 1.4rem; }
+    .date-chip .day { font-size: 2rem; }
     .relator-card { flex-direction: column; align-items: center; text-align: center; }
     .relator-tags { justify-content: center; }
     .ficha-grid { grid-template-columns: 1fr; }
@@ -507,7 +508,7 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="container">
+  <div class="container" style="position:relative;z-index:1">
     <span class="hero-eyebrow">📋 Curso exclusivo · Clientes Cordero Asociados</span>
     <h1 class="hero-title">
       ¿Sabes lo que te puede costar no proteger<br>
@@ -594,7 +595,7 @@
 <section class="programa">
   <div class="container">
     <p class="section-eyebrow">Programa del curso</p>
-    <h2 class="section-title">6 horas que <em>cambian lo que sabe</em> sobre tus propios datos</h2>
+    <h2 class="section-title">6 horas que <em>cambian lo que sabes</em> sobre tus propios datos</h2>
     <p class="section-lead">Tres sesiones online de 2 horas cada una. Cada sesión parte de un problema real y termina con una herramienta aplicable.</p>
 
     <!-- M1 -->
@@ -714,7 +715,7 @@
 <section class="ficha">
   <div class="container">
     <p class="section-eyebrow">Ficha del curso</p>
-    <h2 class="section-title">Todo lo que necesita <em>saber antes de inscribirte</em></h2>
+    <h2 class="section-title">Todo lo que necesitas <em>saber antes de inscribirte</em></h2>
     <div class="ficha-grid">
       <div class="ficha-label">Nombre</div>
       <div class="ficha-value">Protección de Datos Personales para Empresas · Ley 21.719</div>
